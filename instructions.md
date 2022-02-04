@@ -44,7 +44,7 @@ In this part, we will try out a simple [centralized workflow](https://www.atlass
 
 ### Share your repository with others 
 
-1.  Share the link to your GitHub repository on the course's Slack workspace and invite others to collaborate... they will do so via the **forking workflow** outlined below.
+1.  Share the link to your GitHub repository on the course's Discord workspace and invite others to collaborate... they will do so via the **forking workflow** outlined below.
 
 ## Forking workflow 
 
