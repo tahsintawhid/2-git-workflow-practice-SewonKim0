@@ -16,7 +16,7 @@ Note that with version control systems such as `git`, it is easy to verify what 
 
 ### Download and install Git
 
-Download and install `git` on your local machine, and create an account on [GitHub](https://github.com), if you haven't already done so.
+Download and install `git` on your local machine, if you haven't already done so.
 
 ## Centralized workflow
 
