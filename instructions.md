@@ -1,8 +1,10 @@
 # Instructions
 
-In this assignment, you will familiarize yourself with two common [version control](https://knowledge.kitchen/Version_control) workflows using [Git and GitHub](Version_control_with_Git_and_GitHub) - a **centralized workflow**, and a **forking workflow** (also known as the **open source workflow**).
+In this assignment, you will familiarize yourself with two common **version control** workflows using **`git`** and **GitHub**: a **centralized workflow**; and a **forking workflow** (also known as the **"open source workflow"**).
 
-You will set up a remote repository on GitHub and a local cloned [repository](https://knowledge.kitchen/Version_control#Repository) for your own project and practice [pushing and pulling](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Pushing_and_pulling) to/from this remote repository. You will also contribute to another student's project by [forking](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Fork) their repository, making changes, and issuing a **pull request** to them to incorporate your changes.
+With the centralized workflow, you will set up a **remote** repository on GitHub and a **local** **cloned** **repository** for your own project and practice **pushing** and **pulling** to/from this remote repository.
+
+With the forking workflow, you will contribute to another student's project by **forking** their repository, making changes to your copy, and issuing a **pull request** to them to incorporate your changes.
 
 Execute the following instructions in order.
 
@@ -10,36 +12,35 @@ Execute the following instructions in order.
 
 ### Disclosure
 
-Note that with version control systems such as Git, it is easy to verify what work has or has not been done by whom on any project via the [log files](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Viewing_logs). So activity using such systems cannot be faked (not that you would ever consider such a thing)!
+Note that with version control systems such as `git`, it is easy to verify what work has or has not been done by whom on any project via the [log files](https://knowledge.kitchen/content/courses/software-engineering/slides/git-and-github/#logs). So activity using such systems cannot be faked (not that you would ever consider such a thing)!
 
 ### Download and install Git
 
-Download and install on your local machine, if you haven't already done so.
+Download and install `git` on your local machine, and create an account on [GitHub](https://github.com), if you haven't already done so.
 
 ## Centralized workflow
 
-In this part, we will try out a simple [centralized workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow), where developers work with two copies of a repository: a local copy, where changes are made; and a remote copy, where completed changes are uploaded in order to be archived and shared with others.
+In this part, we will try out a simple **centralized workflow**, where developers work with two copies of a repository: a **local** copy, where changes are made; and a **remote** copy, where completed changes are uploaded in order to be archived and shared with others.
 
 ### Create a remote GitHub repository
 
 1.  Create an account on [GitHub](https://github.com), if you don't already have one.
-2.  Create a new repository in your account on GitHub. If you are viewing this document in your own repository, then this is already done!
+2.  Create a new repository in your account on GitHub. If you are viewing this document in your own repository or a repository that has been created for you by **GitHub Classroom**, then this is already done!
 
 ### Create a local Git repository
 
 1.  Clone your remote repository on GitHub to your own local machine.
 
-2.  [Create a README.md file](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Create_a_new_file) in that directory using valid Markdown syntax.
-    [Edit](https://knowledge.kitchen/Basic_computer_concepts#Creating_and_editing_files) this file such that it includes the following:
+2.  Create a `README.md` file in that directory using valid Markdown syntax. **Edit** this file such that it includes the following:
     - a link to an article or web site you find interesting related to software development/engineering (indirect relationships are ok)
     - a paragraph or two about what you find interesting about that article
     - remember that this will be public
     - Use Markdown syntax to make it look nice
-3.  [Commit](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Commit_changes_to_the_repository) your README.md file to the local repository, including a meaningful commit message.
+3.  **Commit** your `README.md`` file to the local repository, including a meaningful commit message.
 
 ### Push changes to the upstream remote repository
 
-1.  [Push](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Push_to_the_remote_repository) the latest version of the files in your local repository to the GitHub repository you created.
+1.  **Push** the latest version of the files in your local repository to the GitHub repository you created.
 2.  Your two repositories should now be in-sync
 
 ### Share your repository with others
@@ -48,7 +49,7 @@ In this part, we will try out a simple [centralized workflow](https://www.atlass
 
 ## Forking workflow
 
-In this part, we will practice the [forking workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow), also known as the **open source workflow**. Developers following this type of workflow interact with at least 3 different copies of a repository: an 'official' remote repository that the developer ultimately intends to contribute to; a remote clone of that official repository (known as a "fork"), a local clone of that remote clone where the developer makes changes.
+In this part, we will practice the **forking workflow**, also known as the **open source workflow**. Developers following this type of workflow interact with at least 3 different copies of a repository: the original **remote** repository that the developer ultimately intends to contribute to; a remote **clone** of that official repositor, known as a "`fork`"; and a local clone of the fork, where the developer makes changes.
 
 ### Find another repository to work with
 
@@ -57,23 +58,23 @@ In this part, we will practice the [forking workflow](https://www.atlassian.com/
 
 ### Fork that repository
 
-1.  Fork that repository on GitHub - you now have a clone of that repository in your own GitHub account - we'll refer to this repository as "your forked repository"
+1.  **Fork** that repository on GitHub - you now have a clone of that repository in your own GitHub account - we'll refer to this repository as "your forked repository"
 
 ### Make a local clone of that fork
 
-1.  [Clone](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Clone) your forked repository from GitHub to a new directory on your local machine (not the same directory as your original repository)
+1.  **Clone** your forked repository from GitHub to a new directory on your local machine (not the same directory as your original repository)
 
 ### Create a branch
 
-1.  [Create a new branch](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Branch) of your forked repository on your local machine where you will make changes to it. Switch to (i.e `checkout`) that branch.
-2.  Edit the README.md file in your forked repository on your local machine to include a comment from you about that same article mentioned in the file. Make it looks nice using Markdown syntax.
+1.  **Create a new branch** of your forked repository on your local machine where you will make changes to it. Switch to (i.e `checkout`) that branch.
+2.  Edit the `README.md` file in your forked repository on your local machine to include a comment from you about that same article mentioned in the file. Make it looks nice using Markdown syntax.
     - Include your name in the edit you make, so we can clearly see who did it (we can also verify this with the Git change logs)
 3.  Commit these changes to your local repository, including a meaningful commit message
 
 ### Push changes to your remote fork
 
-1.  [Pull](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Pushing_and_pulling) any changes others may have made to the remote repository on GitHub while you were working (use the `--rebase` option on the git pull to put your own changes to the tip of the change history when merged)
-2.  [Push](https://knowledge.kitchen/Version_control_with_Git_and_GitHub#Pushing_and_pulling) your changes to your remote repository on GitHub
+1.  **Pull** any changes others may have made to the remote repository on GitHub while you were working (use the `--rebase` option on the git pull to put your own changes to the tip of the change history when merged)
+2.  **Push** your changes to your remote repository on GitHub
 3.  The branch you created with the changes you made will now be updated on your forked repository on GitHub
 
 ### Issue a pull request to the original repository
